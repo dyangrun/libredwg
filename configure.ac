@@ -310,6 +310,14 @@ if test x$cross_compiling = xno; then
       SWIG_PYTHON
       AC_CHECK_PROGS([PATCH], [patch])
     fi
+    if test -n "$SWIG"; then
+      AM_CONDITIONAL([HAVE_SWIG], [1])
+
+      AC_PROG_CXX
+      AX_COMPILER_FLAGS_CXXFLAGS
+      AX_SWIG_ENABLE_CXX
+      SWIG_MULTI_MODULE_SUPPORT
+    fi
     dnl swig not required for perl, we ship swig_perl.c
     if test -n "$PERL"; then
       ac_cv_perl="$PERL"
@@ -320,8 +328,6 @@ if test x$cross_compiling = xno; then
     AC_PATH_PROG([PERL], [$ac_cv_perl])
     AM_RUN_LOG([$PERL --version])
     AM_RUN_LOG([$PERL -V:cc])
-    dnl AX_SWIG_ENABLE_CXX
-    dnl SWIG_MULTI_MODULE_SUPPORT
 else
     AC_MSG_WARN([disabled swig bindings: cross-compiled])
 fi
@@ -430,6 +436,7 @@ AC_CONFIG_FILES([
 	examples/Makefile
 	bindings/Makefile
 	bindings/python/Makefile
+	bindings/cxx/Makefile
 	test/Makefile
 	test/testcases/Makefile
 	test/xmlsuite/Makefile
