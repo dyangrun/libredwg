@@ -20,6 +20,7 @@
 lib_LTLIBRARIES = libredwg.la
 WARN_CFLAGS = @WARN_CFLAGS@
 AM_CFLAGS   = -I$(top_srcdir)/include -I. $(WARN_CFLAGS)
+libredwg_la_LDFLAGS = -version-info 0:0:0 -no-undefined -lm
 
 libredwg_la_SOURCES = \
 	dwg.c \
@@ -39,20 +40,22 @@ libredwg_la_SOURCES += \
         out_dxf.c \
         out_dxfb.c \
         out_geojson.c
+#       out_xml.c \
+#       out_yaml.c
 endif
 if USE_WRITE
 libredwg_la_SOURCES += \
 	encode.c
-#       encode_r2007.c \
-#       in_json.c
+#       encode_r2007.c
 if !DISABLE_DXF
 libredwg_la_SOURCES += \
 	in_dxf.c \
-	in_dxfb.c
+	in_dxfb.c \
+	in_json.c
+#       in_xml.c
+#       in_yaml.c
 endif
 endif
-
-libredwg_la_LDFLAGS = -version-info 0:0:0 -no-undefined -lm
 
 EXTRA_HEADERS = \
 	dwg.spec \
@@ -78,12 +81,16 @@ EXTRA_HEADERS = \
 if !DISABLE_DXF
 EXTRA_HEADERS += \
 	out_dxf.h
+#       out_xml.h
+#       out_yaml.h
 endif
 if USE_WRITE
 EXTRA_HEADERS += \
 	encode.h \
 	in_dxf.h \
 	in_json.h
+#       in_xml.h
+#       in_yaml.h
 endif
 
 EXTRA_DIST = \

@@ -50,8 +50,8 @@ static bool env_var_checked_p;
  * Public functions
  */
 
-static int dat_read_file (Bit_Chain *restrict dat, FILE *restrict fp,
-                          const char *restrict filename)
+int dat_read_file (Bit_Chain *restrict dat, FILE *restrict fp,
+                   const char *restrict filename)
 {
   size_t size;
   dat->chain = (unsigned char *) calloc(1, dat->size);
@@ -76,7 +76,7 @@ static int dat_read_file (Bit_Chain *restrict dat, FILE *restrict fp,
   return 0;
 }
 
-static int dat_read_stream (Bit_Chain *restrict dat, FILE *restrict fp)
+int dat_read_stream (Bit_Chain *restrict dat, FILE *restrict fp)
 {
   size_t size = 0;
 

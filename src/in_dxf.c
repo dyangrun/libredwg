@@ -685,7 +685,7 @@ dwg_indxf_variable_type(Dwg_Data *restrict dwg, Bit_Chain *restrict dat,
   int is_entity;
 
   i = obj->type - 500;
-  if (i < 0 || i >= dwg->num_classes)
+  if (i < 0 || i >= (int)dwg->num_classes)
     return DWG_ERR_INVALIDTYPE;
 
   klass = &dwg->dwg_class[i];

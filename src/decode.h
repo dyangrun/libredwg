@@ -87,4 +87,11 @@ void
 section_string_stream(Bit_Chain *restrict dat, BITCODE_RL bitsize,
                       Bit_Chain *restrict str);
 
+/* from dwg.c */
+int
+dat_read_file (Bit_Chain *restrict dat, FILE *restrict fp,
+               const char *restrict filename);
+int
+dat_read_stream (Bit_Chain *restrict dat, FILE *restrict fp);
+
 #endif
