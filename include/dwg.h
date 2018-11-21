@@ -5158,6 +5158,219 @@ typedef struct _dwg_object_ACDBNAVISWORKSMODELDEF
 
 } Dwg_Object_ACDBNAVISWORKSMODELDEF;
 
+// AEC classes with coverage:
+
+typedef struct _dwg_object_AEC_DISP_PROPS_DOOR
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_DOOR;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_2D_SECTION
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_2D_SECTION;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_ENT
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_ENT;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_ENT_REF
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_ENT_REF;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_CLIP_VOLUME
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_CLIP_VOLUME;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_CLIP_VOLUME_RESULT
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_CLIP_VOLUME_RESULT;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_DISPLAYTHEME
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_DISPLAYTHEME;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_EDITINPLACEPROFILE_MODEL
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_EDITINPLACEPROFILE_MODEL;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_LAYOUT_CURVE
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_LAYOUT_CURVE;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_LAYOUT_GRID2D
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_LAYOUT_GRID2D;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_MASKBLOCK
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_MASKBLOCK;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_MASS_ELEM_MODEL
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_MASS_ELEM_MODEL;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_MASS_GROUP
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_MASS_GROUP;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_ROOFSLAB
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_ROOFSLAB;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_SLAB
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_SLAB;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_SLICE
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_SLICE;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_SPACE_DECOMPOSED
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_SPACE_DECOMPOSED;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_SPACE_MODEL
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_SPACE_MODEL;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_STAIR_MODEL
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_STAIR_MODEL;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_STAIR_PLAN_OVERLAPPING
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_STAIR_PLAN_OVERLAPPING;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_STAIR_PLAN
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_STAIR_PLAN;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WALL_GRAPH
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WALL_GRAPH;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WALL_MODEL
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WALL_MODEL;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WALL_SCHEM
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WALL_SCHEM;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WINDOW
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WINDOW;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WINDOW_SILL_PLAN
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WINDOW_SILL_PLAN;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WINDOW_ASSEMBLY_SILL_PLAN
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WINDOW_ASSEMBLY_SILL_PLAN;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WINDOW_NOMINAL
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WINDOW_NOMINAL;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WINDOW_PLAN_100
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WINDOW_PLAN_100;
+
+typedef struct _dwg_object_AEC_DISP_PROPS_WINDOW_PLAN_50
+{
+  struct _dwg_object_object *parent;
+  BITCODE_H parenthandle; /*!< DXF 330 */
+
+} Dwg_Object_AEC_DISP_PROPS_WINDOW_PLAN_50;
+
+
 /**
  -----------------------------------
  */
@@ -5470,6 +5683,38 @@ typedef struct _dwg_object_object
     Dwg_Object_WIPEOUTVARIABLES *WIPEOUTVARIABLES;
     Dwg_Object_XRECORD *XRECORD;
     //TODO Dwg_Object_XREFPANELOBJECT *XREFPANELOBJECT;
+
+    Dwg_Object_AEC_DISP_PROPS_DOOR *AEC_DISP_PROPS_DOOR;
+    Dwg_Object_AEC_DISP_PROPS_2D_SECTION *AEC_DISP_PROPS_2D_SECTION;
+    Dwg_Object_AEC_DISP_PROPS_ENT *AEC_DISP_PROPS_ENT;
+    Dwg_Object_AEC_DISP_PROPS_ENT_REF *AEC_DISP_PROPS_ENT_REF;
+    Dwg_Object_AEC_DISP_PROPS_CLIP_VOLUME *AEC_DISP_PROPS_CLIP_VOLUME;
+    Dwg_Object_AEC_DISP_PROPS_CLIP_VOLUME_RESULT *AEC_DISP_PROPS_CLIP_VOLUME_RESULT;
+    Dwg_Object_AEC_DISP_PROPS_DISPLAYTHEME *AEC_DISP_PROPS_DISPLAYTHEME;
+    Dwg_Object_AEC_DISP_PROPS_EDITINPLACEPROFILE_MODEL *AEC_DISP_PROPS_EDITINPLACEPROFILE_MODEL;
+    Dwg_Object_AEC_DISP_PROPS_LAYOUT_CURVE *AEC_DISP_PROPS_LAYOUT_CURVE;
+    Dwg_Object_AEC_DISP_PROPS_LAYOUT_GRID2D *AEC_DISP_PROPS_LAYOUT_GRID2D;
+    Dwg_Object_AEC_DISP_PROPS_MASKBLOCK *AEC_DISP_PROPS_MASKBLOCK;
+    Dwg_Object_AEC_DISP_PROPS_MASS_ELEM_MODEL *AEC_DISP_PROPS_MASS_ELEM_MODEL;
+    Dwg_Object_AEC_DISP_PROPS_MASS_GROUP *AEC_DISP_PROPS_MASS_GROUP;
+    Dwg_Object_AEC_DISP_PROPS_ROOFSLAB *AEC_DISP_PROPS_ROOFSLAB;
+    Dwg_Object_AEC_DISP_PROPS_SLAB *AEC_DISP_PROPS_SLAB;
+    Dwg_Object_AEC_DISP_PROPS_SLICE *AEC_DISP_PROPS_SLICE;
+    Dwg_Object_AEC_DISP_PROPS_SPACE_DECOMPOSED *AEC_DISP_PROPS_SPACE_DECOMPOSED;
+    Dwg_Object_AEC_DISP_PROPS_SPACE_MODEL *AEC_DISP_PROPS_SPACE_MODEL;
+    Dwg_Object_AEC_DISP_PROPS_STAIR_MODEL *AEC_DISP_PROPS_STAIR_MODEL;
+    Dwg_Object_AEC_DISP_PROPS_STAIR_PLAN_OVERLAPPING *AEC_DISP_PROPS_STAIR_PLAN_OVERLAPPING;
+    Dwg_Object_AEC_DISP_PROPS_STAIR_PLAN *AEC_DISP_PROPS_STAIR_PLAN;
+    Dwg_Object_AEC_DISP_PROPS_WALL_GRAPH *AEC_DISP_PROPS_WALL_GRAPH;
+    Dwg_Object_AEC_DISP_PROPS_WALL_MODEL *AEC_DISP_PROPS_WALL_MODEL;
+    Dwg_Object_AEC_DISP_PROPS_WALL_SCHEM *AEC_DISP_PROPS_WALL_SCHEM;
+    Dwg_Object_AEC_DISP_PROPS_WINDOW *AEC_DISP_PROPS_WINDOW;
+    Dwg_Object_AEC_DISP_PROPS_WINDOW_SILL_PLAN *AEC_DISP_PROPS_WINDOW_SILL_PLAN;
+    Dwg_Object_AEC_DISP_PROPS_WINDOW_ASSEMBLY_SILL_PLAN *AEC_DISP_PROPS_WINDOW_ASSEMBLY_SILL_PLAN;
+    Dwg_Object_AEC_DISP_PROPS_WINDOW_NOMINAL *AEC_DISP_PROPS_WINDOW_NOMINAL;
+    Dwg_Object_AEC_DISP_PROPS_WINDOW_PLAN_100 *AEC_DISP_PROPS_WINDOW_PLAN_100;
+    Dwg_Object_AEC_DISP_PROPS_WINDOW_PLAN_50 *AEC_DISP_PROPS_WINDOW_PLAN_50;
+
     Dwg_Object_UNKNOWN_OBJ *UNKNOWN_OBJ;
   } tio;
 
@@ -6106,6 +6351,37 @@ EXPORT int dwg_add_TABLE (Dwg_Object *obj);
 EXPORT int dwg_add_TABLECONTENT (Dwg_Object *obj);
 EXPORT int dwg_add_TABLEGEOMETRY (Dwg_Object *obj);
 //EXPORT int dwg_add_XREFPANELOBJECT (Dwg_Object *obj);
+
+EXPORT int dwg_add_AEC_DISP_PROPS_DOOR (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_2D_SECTION (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_ENT (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_ENT_REF (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_CLIP_VOLUME (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_CLIP_VOLUME_RESULT (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_DISPLAYTHEME (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_EDITINPLACEPROFILE_MODEL (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_LAYOUT_CURVE (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_LAYOUT_GRID2D (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_MASKBLOCK (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_MASS_ELEM_MODEL (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_MASS_GROUP (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_ROOFSLAB (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_SLAB (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_SLICE (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_SPACE_DECOMPOSED (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_SPACE_MODEL (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_STAIR_MODEL (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_STAIR_PLAN_OVERLAPPING (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_STAIR_PLAN (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WALL_GRAPH (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WALL_MODEL (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WALL_SCHEM (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WINDOW (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WINDOW_SILL_PLAN (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WINDOW_ASSEMBLY_SILL_PLAN (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WINDOW_NOMINAL (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WINDOW_PLAN_100 (Dwg_Object *obj);
+EXPORT int dwg_add_AEC_DISP_PROPS_WINDOW_PLAN_50 (Dwg_Object *obj);
 
 #endif /* DEBUG_CLASSES */
 
