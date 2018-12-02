@@ -31,6 +31,7 @@ libredwg_la_SOURCES = \
         print.c \
         free.c \
         hash.c \
+	dynapi.c \
 	dwg_api.c \
 	$(EXTRA_HEADERS)
 if !DISABLE_DXF
@@ -89,6 +90,9 @@ endif
 EXTRA_DIST = \
 	$(include_HEADERS) \
 	$(EXTRA_HEADERS)
+
+dynapi.c: gen-dynapi.pl ../include/dwg.h
+	$(PERL) gen-dynapi.pl
 
 .c.i:
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
