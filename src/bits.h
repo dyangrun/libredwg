@@ -219,7 +219,7 @@ uint16_t
 bit_read_CRC(Bit_Chain *dat);
 
 int
-bit_check_CRC(Bit_Chain *dat, long unsigned int start_address,
+bit_check_CRC(Bit_Chain * dat, long unsigned int start_address,
               uint16_t seed);
 
 uint16_t

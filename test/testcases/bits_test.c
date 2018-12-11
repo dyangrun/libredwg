@@ -498,8 +498,10 @@ main (int argc, char const *argv[])
         bit_set_position(&bitchain, pos);
       }
   }
-#define _CRC 0x7EE5
+#define _CRC 0x25A9
   bit_advance_position(&bitchain, -2);
+  bitchain.bit = 0; // backup to byte alignment
+  pos = bitchain.byte;
   {
     unsigned int crc = bit_write_CRC(&bitchain, 0, 0x64);
     if (crc == _CRC)
@@ -519,8 +521,8 @@ main (int argc, char const *argv[])
     pass("bit_read_CRC");
   else
     fail("bit_read_CRC %X", bs);
-  bit_advance_position(&bitchain, -16);
 
+  bit_advance_position(&bitchain, -16);
   if ((bs = bit_calc_CRC(0x64, (unsigned char *)&bitchain.chain, 0)) == 0x64)
     pass("bit_calc_CRC");
   else
@@ -528,7 +530,7 @@ main (int argc, char const *argv[])
   bit_advance_position(&bitchain, 16);
 
   bit_write_TV(&bitchain, (char*)"GNU"); //now we store the \0 also
-  if (bitchain.byte == 70 && bitchain.bit == 2)
+  if (bitchain.byte == 69 && bitchain.bit == 2)
     pass("bit_write_TV");
   else
     fail("bit_write_TV @%ld.%d", bitchain.byte, bitchain.bit);
@@ -538,10 +540,10 @@ main (int argc, char const *argv[])
     pass("bit_read_TV");
   else
     fail("bit_read_TV");
-  bit_advance_position(&bitchain, -8);
 
+  bit_advance_position(&bitchain, -8);
   bit_write_L(&bitchain, 20);
-  if (bitchain.byte == 73 && bitchain.bit == 2)
+  if (bitchain.byte == 72 && bitchain.bit == 2)
     pass("bit_write_L");
   else
     fail("bit_write_L @%ld.%d", bitchain.byte, bitchain.bit);
@@ -562,7 +564,7 @@ main (int argc, char const *argv[])
     color.name = (char*)"Some name";
     color.book_name = (char*)"book_name";
     bit_write_CMC(&bitchain, &color);
-    if (bitchain.byte == 74 && bitchain.bit == 4)
+    if (bitchain.byte == 73 && bitchain.bit == 4)
       pass("bit_write_CMC r2000");
     else
       fail("bit_write_CMC @%ld.%d", bitchain.byte, bitchain.bit);
@@ -594,7 +596,7 @@ main (int argc, char const *argv[])
     color.name = (char*)"Some name";
     color.book_name = (char*)"book_name";
     bit_write_CMC(&bitchain, &color);
-    if (bitchain.byte == 91 && bitchain.bit == 0)
+    if (bitchain.byte == 90 && bitchain.bit == 0)
       pass("bit_write_CMC r2004");
     else
       fail("bit_write_CMC @%ld.%d", bitchain.byte, bitchain.bit);
@@ -627,14 +629,14 @@ main (int argc, char const *argv[])
   bitchain.byte = 0;
   {
     int ret = bit_search_sentinel(&bitchain, sentinel);
-    if (bitchain.byte == 108)
+    if (bitchain.byte == 107)
       pass("bit_search_sentinel");
     else
       fail("bit_search_sentinel %d", bitchain.byte);
   }
   {
     unsigned int check = bit_calc_CRC(0xC0C1, (unsigned char *)bitchain.chain, 108);
-    if (check == 0xEB57)
+    if (check == 0x2FFC)
       pass("bit_calc_CRC");
     else
       fail("bit_calc_CRC %04X", check);

@@ -3935,7 +3935,7 @@ dwg_decode_add_object(Dwg_Data *restrict dwg, Bit_Chain* dat, Bit_Chain* hdl_dat
       if (calc == crc)
         break;
     }
-    bit_check_CRC(dat, address, 0xC0C1);
+    bit_check_CRC(dat, address, seed);
     LOG_TRACE("seed: %04X [RSx]\n", seed);
     LOG_TRACE("size: %d\n", (int)(dat->byte - address - 2));
   }

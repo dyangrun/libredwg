@@ -1122,8 +1122,8 @@ bit_write_H(Bit_Chain *restrict dat, Dwg_Handle *restrict handle)
     bit_write_RC(dat, val[i]);
 }
 
-/** Only read CRC-numbers, without checking, only in order to go to
- *  the next byte, while skipping non-aligned bits.
+/** Only read CRC-numbers. Without checking, only in order to go to
+ *  the next byte, while skipping alignment bits.
  */
 uint16_t
 bit_read_CRC(Bit_Chain * dat)
@@ -1144,7 +1144,7 @@ bit_read_CRC(Bit_Chain * dat)
   return result;
 }
 
-/** Read and check CRC-number.
+/** Read and check CRC-number, from start_address until dat->byte.
  */
 int
 bit_check_CRC(Bit_Chain * dat, long unsigned int start_address,
@@ -1152,6 +1152,8 @@ bit_check_CRC(Bit_Chain * dat, long unsigned int start_address,
 {
   uint16_t calculated;
   uint16_t read;
+  unsigned char res[2];
+  long unsigned int old_byte;
 
   if (dat->bit > 0)
     {
